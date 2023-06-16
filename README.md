@@ -16,13 +16,13 @@ A: url='https://raw.githubusercontent.com/SparrowChang/CS6375_assignment1/main/a
 
 2.Pre-process your dataset. Pre-processing includes the following activities:
 A: 
--Rename column name by mapping dictionary (ex: mpg, cylinders, displacement...)
--Change data structures from object to numerical values (ex: horsepower)
--Drop the columns that are not relevant for the regression analysis (ex: car name)
--Normalize data (ex: StandardScaler())
--Remove null or NA values (ex: dropna())
--Remove redundant rows (ex: drop_duplicates())
--Draw a Correlation Heatmap. Y is the output, ‘mpg’ (mile per gallon), we could know the attitudes ‘weight’, ‘displacement’, ‘horsepower’ and ‘cylinders’ show higher correlation coefficient with the output ‘mpg’.
+- Rename column name by mapping dictionary (ex: mpg, cylinders, displacement...)
+- Change data structures from object to numerical values (ex: horsepower)
+- Drop the columns that are not relevant for the regression analysis (ex: car name)
+- Normalize data (ex: StandardScaler())
+- Remove null or NA values (ex: dropna())
+- Remove redundant rows (ex: drop_duplicates())
+- Draw a Correlation Heatmap. Y is the output, ‘mpg’ (mile per gallon), we could know the attitudes ‘weight’, ‘displacement’, ‘horsepower’ and ‘cylinders’ show higher correlation coefficient with the output ‘mpg’.
 
 3. After pre-processing split the dataset into training and test parts. It is up to you to choose the train/test ratio
 A: We choose train/test ratio = 80/20 by using train_test_split.

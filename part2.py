@@ -13,6 +13,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
 from sklearn.metrics import explained_variance_score
+from sklearn.model_selection import train_test_split
 
 
 # In[2]:
@@ -85,19 +86,16 @@ plt.show
 
 
 # Step 3: Split the dataset into training and test sets
-train_ratio = 0.8  # Choose the train/test ratio (e.g., 0.8 for 80/20 split)
-train_size = int(train_ratio * len(normalized_df))
-train_data = normalized_df[:train_size]
-test_data = normalized_df[train_size:]
+X = normalized_df.iloc[:, 1:]
+X = np.column_stack((np.ones(len(X)), X))
+y = normalized_df.iloc[:, 0]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 
 # In[6]:
 
 
 # Step 4: Train the linear regression model
-X_train = train_data.iloc[:, 1:].values
-y_train = train_data.iloc[:, 0].values
-
 model = LinearRegression()
 model.fit(X_train, y_train)
 
@@ -106,9 +104,6 @@ model.fit(X_train, y_train)
 
 
 # Step 5: Evaluate the model on the test set
-X_test = test_data.iloc[:, 1:].values
-y_test = test_data.iloc[:, 0].values
-
 y_pred = model.predict(X_test)
 
 mse = mean_squared_error(y_test, y_pred)

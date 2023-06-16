@@ -9,6 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
 
 
 # In[2]:
@@ -81,10 +82,10 @@ plt.show
 
 
 # Step 3: Split the dataset into training and test sets
-train_ratio = 0.8  # Choose the train/test ratio (e.g., 0.8 for 80/20 split)
-train_size = int(train_ratio * len(normalized_df))
-train_data = normalized_df[:train_size]
-test_data = normalized_df[train_size:]
+X = normalized_df.iloc[:, 1:]
+X = np.column_stack((np.ones(len(X)), X))
+y = normalized_df.iloc[:, 0]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 
 # In[6]:
@@ -137,18 +138,6 @@ def optimize_performance(X_train, y_train, X_test, y_test, learning_rate_range, 
 
 
 # Step 5: Evaluate the model on the test set
-# Prepare the training data
-X_train = train_data.iloc[:, 1:].values
-y_train = train_data.iloc[:, 0].values
-# Add a column of ones for the bias term
-X_train = np.column_stack((np.ones(len(X_train)), X_train))
-
-# Prepare the test data
-X_test = test_data.iloc[:, 1:].values
-y_test = test_data.iloc[:, 0].values
-# Add a column of ones for the bias term
-X_test = np.column_stack((np.ones(len(X_test)), X_test))
-
 iteration_range = [100, 500, 1000]
 learning_rate_range = [0.001, 0.01, 0.1, 0.5]
 

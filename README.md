@@ -62,6 +62,3 @@ Explained variance: 0.7915327760182195
 
 6. Answer this question: Are you satisfied that you have found the best solution? Explain.
 A: Yes, MSE is around 10.71 which is close to gradient descent method. 
-
-6. Answer this question: Are you satisfied that you have found the best solution? Explain.
-A: Yes, MSE is around 10.71 which is close to gradient descent method. 

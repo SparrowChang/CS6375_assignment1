@@ -27,7 +27,7 @@ A:
 3. After pre-processing split the dataset into training and test parts. It is up to you to choose the train/test ratio
 A: We choose train/test ratio = 80/20 by using train_test_split.
 
-4.Use the training dataset to construct a linear regression model. 
+4. Use the training dataset to construct a linear regression model. 
 A: as below gradient_descent function.
 
 5. Apply the model you created in the previous step to the test part of the dataset. Report the test dataset error values for the best set of parameters obtained from previous part. 

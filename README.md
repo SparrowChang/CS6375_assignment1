@@ -13,6 +13,7 @@ Run all, it will generate 'path_to_log_file_MLlib.txt'
 # 1 Linear Regression using Gradient Descent Coding in Python (75 points)
 1. Choose a dataset suitable for regression from UCI ML Repository: -https://archive.ics.uci.edu/ml/datasets.php. 
 A: url='https://raw.githubusercontent.com/SparrowChang/CS6375_assignment1/main/auto%2Bmpg/auto-mpg.data', we use the dataset (auto MPG from UCI ML repository) and upload on Ching-Yi’s Github. Overall could see https://github.com/SparrowChang/CS6375_assignment1
+
 2.Pre-process your dataset. Pre-processing includes the following activities:
 A: 
 -Rename column name by mapping dictionary (ex: mpg, cylinders, displacement...)

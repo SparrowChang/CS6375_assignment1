@@ -1,4 +1,4 @@
-## CS6375_assignment1: https://github.com/SparrowChang/CS6375_assignment1
+# CS6375_assignment1: https://github.com/SparrowChang/CS6375_assignment1
 CS6375 assignment1 files: 
 1. 'part1.py': Linear Regression using Gradient Descent Coding in Python.
 Run all, it will generate 'path_to_log_file.txt'
@@ -9,8 +9,8 @@ Run all, it will generate 'path_to_log_file_MLlib.txt'
 3. 'CS6375 Assignment1_230616_final.pdf': details as below.
 
 ---------------------------
-## 'CS6375 Assignment1_230616_final.pdf'
-# 1 Linear Regression using Gradient Descent Coding in Python (75 points)
+# 'CS6375 Assignment1_230616_final.pdf'
+## 1 Linear Regression using Gradient Descent Coding in Python (75 points)
 1. Choose a dataset suitable for regression from UCI ML Repository: -https://archive.ics.uci.edu/ml/datasets.php. 
 A: url='https://raw.githubusercontent.com/SparrowChang/CS6375_assignment1/main/auto%2Bmpg/auto-mpg.data', we use the dataset (auto MPG from UCI ML repository) and upload on Ching-Yi’s Github. Overall could see https://github.com/SparrowChang/CS6375_assignment1
 
@@ -45,7 +45,7 @@ Best parameters: {'iterations': 1000, 'learning_rate': 0.1}
 solution? Explain.
 A: Yes, we satisfied the result, MSE of gradient decent is around 10.73 which is close to MSE of ML libraries (sklearn.linear_model LinearRegression) 10.71.
 
-# 2 Linear Regression using ML libraries (25 points)
+## 2 Linear Regression using ML libraries (25 points)
 A: From step 1 to step 3 is exactly the same as the 1st part.
 
 4. The big difference from the 1st part, we use any ML library that performs linear regression from Scikit Learn package. https://scikit-learn.org

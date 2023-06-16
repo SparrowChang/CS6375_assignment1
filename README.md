@@ -1,4 +1,4 @@
-# CS6375_assignment1: https://github.com/SparrowChang/CS6375_assignment1
+## CS6375_assignment1: https://github.com/SparrowChang/CS6375_assignment1
 CS6375 assignment1 files: 
 1. 'part1.py': Linear Regression using Gradient Descent Coding in Python.
 Run all, it will generate 'path_to_log_file.txt'
@@ -30,7 +30,8 @@ A: We choose train/test ratio = 80/20 by using train_test_split.
 A: as below gradient_descent function.
 
 5. Apply the model you created in the previous step to the test part of the dataset. Report the test dataset error values for the best set of parameters obtained from previous part. 
-A: Consider 7 multiple attributes and think of the vector from of the weight update equation. We tune these parameters to achieve the optimum error value as below optimize_performance function.
+A: Consider 7 multiple attributes and think of the vector from of the weight update equation. 
+We tune these parameters to achieve the optimum error value as below optimize_performance function.
 iteration_range = [100, 500, 1000]
 learning_rate_range = [0.001, 0.01, 0.1, 0.5]
 
@@ -44,9 +45,11 @@ solution? Explain.
 A: Yes, we satisfied the result, MSE of gradient decent is around 10.73 which is close to MSE of ML libraries (sklearn.linear_model LinearRegression) 10.71.
 
 # 2 Linear Regression using ML libraries (25 points)
-A: From step 1 to step 3 is exactly the same as the 1st part.  
+A: From step 1 to step 3 is exactly the same as the 1st part.
+
 4. The big difference from the 1st part, we use any ML library that performs linear regression from Scikit Learn package. https://scikit-learn.org
 A: 
+
 5. Apply the model you created in the previous step to the test part of the dataset. Report the test dataset error values for the best set of parameters
 obtained from previous part. 
 A: We create a log file that indicates parameters used and error (MSE) value.
@@ -54,6 +57,9 @@ In log file (optimum test error value)
 Mean squared error (MSE): 10.710864418838403
 R2 score: 0.7901500386760344
 Explained variance: 0.7915327760182195
+
+6. Answer this question: Are you satisfied that you have found the best solution? Explain.
+A: Yes, MSE is around 10.71 which is close to gradient descent method. 
 
 6. Answer this question: Are you satisfied that you have found the best solution? Explain.
 A: Yes, MSE is around 10.71 which is close to gradient descent method. 

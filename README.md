@@ -9,8 +9,9 @@ Run all, it will generate 'path_to_log_file_MLlib.txt'
 3. 'CS6375 Assignment1_230616_final.pdf': details as below.
 
 ---------------------------
-'CS6375 Assignment1_230616_final.pdf' 
-1 Linear Regression using Gradient Descent Coding in Python (75 points)
+# 'CS6375 Assignment1_230616_final.pdf'
+
+# 1 Linear Regression using Gradient Descent Coding in Python (75 points)
 1. Choose a dataset suitable for regression from UCI ML Repository: -https://archive.ics.uci.edu/ml/datasets.php. 
 A: url='https://raw.githubusercontent.com/SparrowChang/CS6375_assignment1/main/auto%2Bmpg/auto-mpg.data', we use the dataset (auto MPG from UCI ML repository) and upload on Ching-Yi’s Github. 
 
@@ -43,7 +44,7 @@ Best parameters: {'iterations': 1000, 'learning_rate': 0.1}
 6. Answer this question: Are you satisfied that you have found the best solution? Explain.
 A: Yes, we satisfied the result, MSE of gradient descent is around 27.51 which is close to MSE of ML libraries (sklearn.linear_model LinearRegression) 27.46.
 
-2 Linear Regression using ML libraries (25 points)
+# 2 Linear Regression using ML libraries (25 points)
 A: From step 1 to step 3 is exactly the same as the 1st part.  
 
 4. The big difference from the 1st part, we use any ML library that performs linear regression from Scikit Learn package. https://scikit-learn.org

@@ -1,0 +1,3 @@
+Mean squared error (MSE): 27.46273183235903
+R2 score: 0.2414371494496731
+Explained variance: 0.4305663485275186

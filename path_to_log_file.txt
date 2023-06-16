@@ -1,2 +1,2 @@
-Best Mean squared error (MSE): 27.518418930391345
+Best Mean squared error (MSE): 10.730665334334235
 Best parameters: {'iterations': 1000, 'learning_rate': 0.1}

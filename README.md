@@ -46,6 +46,7 @@ solution? Explain.
 A: Yes, we satisfied the result, MSE of gradient decent is around 10.73 which is close to MSE of ML libraries (sklearn.linear_model LinearRegression) 10.71.
 
 ## 2 Linear Regression using ML libraries (25 points)
+1-3. 
 A: From step 1 to step 3 is exactly the same as the 1st part.
 
 4. The big difference from the 1st part, we use any ML library that performs linear regression from Scikit Learn package. https://scikit-learn.org
